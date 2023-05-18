@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Nguyen Minh Nhu">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mặt Khoa học, vật lý và kĩ thuật</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">LET'S TALK ABOUT CALCULUS!!!</a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html">TRANG CHỦ</a></li>
+                <li class="nav-item"><a href="#content">NỘI DUNG</a></li>
+                <li class="nav-item"><a href="about.html">VỀ CHÚNG TÔI</a></li>
+            </ul>
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span> </label>
+        </nav>
+    </header>
+
+    <main>
+        <h1>MẶT KHOA HỌC, VẬT LÝ VÀ KỸ THUẬT</h1>
+        <p>
+            Một số ứng dụng của toán cao cấp trong lĩnh vực này:
+        </p>
+        <ul>
+            <p>
+                <li>
+                    Thiết kế và kiểm tra tính động của các cấu trúc kỹ thuật, như cầu, nhà cao tầng, đập thủy điện, v.v.
+
+                </li>
+            </p>
+            <p>
+                <li>
+                    Nghiên cứu về sóng âm, sóng điện từ, sóng siêu âm và các hiện tượng sóng khác.
+                </li>
+            </p>
+            <p>
+                <li>
+                    Phát triển và cải tiến các phương pháp tối ưu hóa, như tối ưu hóa đường đi, tối ưu hóa mô hình,
+                    tối
+                    ưu hóa
+                    chế độ điều khiển.
+                </li>
+            </p>
+        </ul>
+
+        <h2>Một Số Ví Dụ</h2>
+        <h3>Áp suất và Lực thủy tĩnh</h3>
+        <p>
+        <ul>
+            <p>
+                <li>Trong các lần lặn biển, các thợ lặn biển sâu nhận ra áp suất nước tăng khi họ lặn sâu hơn. Và nguyên
+                    nhân
+                    là trọng lượng của nước phía trên họ tăng.</li>
+            </p>
+            <p>
+                <li>Nói một cách tổng quát, giả sử nhúng một tấm kim loại mỏng ngang có diện tích A m2 vào một dung dịch
+                    có tỉ
+                    trọng ρ kilogam/ m3 tạo độ sâu d mét dưới bề mặt dung dịch thì khối dung dịch nằm ngay phía trên tấm
+                    kim
+                    loại có thể tích V = Ad, vì vậy khối lượng của nó là m = ρV = ρAd. Khi đó, lực do dung dịch tác động
+                    lên tấm
+                    kim loại là:
+                </li>
+            </p>
+            <p class="equation">F = mg + ρgAd</p>
+            <p>
+                <li>Áp suất P tác dụng lên tấm kim loại được định nghĩa là lực trên một đơn vị diện tích:</li>
+            </p>
+            <p class="equation">P = F/A=ρgd</p>
+        </ul>
+        <p>Đơn vị đo áp suất theo hệ đo lường SI là newton trên m2 mà được gọi là pascal (1N/m2 = 1Pa). Vì đây là đơn vị
+            nhỏ nên ta hay dùng kilopascal (kPa). Chẳng hạn như vì dung lượng nước là ρ = 1000 kg/m3, nên áp suất tại
+            đáy hồ bơi sâu 2m là:</p>
+
+        </p>
+
+        <p class="equation">P = ρgd = 1000 kg/m3 × 9.8 m/s2 × 2m</p>
+        <p>
+            <i class="arrow right"></i>
+            Nguyên lý quan trọng của áp suất chất lỏng được kiểm chứng qua thực nghiệm là tại điểm bất kì trong
+            lòng chất lỏng, áp suất như nhau ở mọi hướng. Do đó áp xuất theo một hướng bất kì tại độ sâu d trong
+            lòng chất lỏng có mật độ khối ρ được tính bởi công thức:
+        </p>
+        <p class="equation">P = ρgd = δd</p>
+
+        <h3>Momen tĩnh và Tâm khối lượng</h3>
+        <div class="vda-sidepicture">
+            <p>
+                Ở đây mục tiêu chính của chúng ta là tìm hiểu P mà tại đó một tấm mỏng có hình dạng bất kì nằm
+                cân
+                bằng ngang như trong hình. Điểm này được gọi là tâm khối lượng (hoặc trọng tâm) của tấm mỏng.
+            </p>
+            <img src="Images/momen1.png" alt="momen" width="187" height="156">
+        </div>
+        <div class="vda-sidepicture">
+            <img src="Images/momen2.png" alt="momen" width="333" height="197">
+            <div class="vda-text-column">
+                <p>
+                    Đầu tiên ta xem xét tình huống đơn giản hơn được minh họa trong hình trên, trong đó hai khối m1 và
+                    m2
+                    được
+                    gắn vào hai bên của một thanh có khối lượng không đáng kể và cách điểm tựa các khoảng d1, d2  thanh
+                    đòn
+                    bẩy
+                    sẽ cân bằng nếu:
+                </p>
+                <p class="equation">m1d1 = m2d2</p>
+                <p>
+                    Đây là một kết quả thực nghiệm được khám phá bởi Archimedes và được gọi là Định luật đòn bẩy.
+                </p>
+            </div>
+        </div>
+        <p> Giả sử thanh ngang nằm dọc theo trục x với m1 tại x1 và m2 tại x2 và tâm khối lượng tại x ̅. Nếu so sánh
+            hình 6 và 7 sẽ thấy rằng d1 = x ̅ – x1 và d2 = x2 - x ̅</p>
+        <img class="center" src="Images/momen3.png" alt="momen" width="602" height="124">
+        <p> Các số m1x1 và m2x2 được gọi là momen của khối lượng m1 và m2 (tương ứng với gốc) và phương trình 3 nói rằng
+            tâm khối lượng x ̅ có được bằng cách cộng momen của các khối lượng và chia cho tổng khối lượng m = m1 + m2
+        </p>
+        <p> Tổng quát: nếu ta có hệ n chất điểm có khối lượng m1, m2,...mn được đặt tại các điểm x1,x2...xn trên trục x,
+            ta có thể chứng minh tương tự rằng tâm khối lượng của hệ được đặt tại:</p>
+        <img class="formular" style="width: 20%" src="Images/formula1.png" alt="a formula" width="746" height="214">
+        <p>Trong đó: m = ∑m_i là tổng khối lượng của hệ và tổng các momen thành phần</p>
+        <img class="formular" style="width: 20%" src="Images/formula2.png" alt="a formula" width="493" height="167">
+        <p>được gọi là momen của hệ quanh gốc. Khi đó phương trình 4 có thể được viết lại thành mx ̅ = M, công thức này
+            nói lên được nếu tổng khối lượng được cho là tập trung tại tâm khối lượng x ̅ thì momen của nó sẽ giống hệt
+            với momen của hệ thống.</p>
+        <p>
+            Bây giờ, ta có thể xem xét một hệ n chất điểm có khối lượng m1,m2,...mn được đặt tại các điểm
+            (x1,y1), (x2,y2),...(xn,yn) trong mặt phẳng xy như hình. Dựa trên phép tương tự hóa từ trường hợp
+            một chiều, ta dịnh nghĩa momen của hệ quay quanh trục y là:
+        </p>
+        <img class="formular" style="width: 20%" src="Images/formula3.png" alt="a formula" width="267" height="216">
+        <div class="vda-sidepicture">
+            <img src="Images/momen4.png" alt="momen" width="455" height="90">
+            <div class="vda-text-column">
+                <p>
+                    Thế thì My đo khung hướng của hệ quay quanh trục y và Mx đo khung hướng của hệ quay quanh trục x.
+                </p>
+                <p>
+                    Như trong trường hợp một chiều, tọa độ (x ̅,y ̅) của tâm khối lượng được cho dưới dạng momen bởi
+                    công thức:
+                </p>
+                <img style="max-width: 50%" src="Images/formula4.png" alt="momen" width="527" height="176">
+            </div>
+        </div>
+        <p>Trong đó: m = ∑M_i là tổng khối lượng. Vì mx ̅ = M_y và my ̅ = M_x, nên tâm khối lượng (x ̅,y ̅)là điểm mà
+            tại đó một chất điểm có khối lượng m sẽ có cùng momen như hệ.</p>
+
+        <section id="content">
+            <h2>ỨNG DỤNG CỦA GIẢI TÍCH</h2>
+            <div class="menu">
+                <figure class="container">
+                    <img src="Images/Science.jpg"
+                        alt="This photo was taken in a school bench, with a mesh for fruit, a blue lantern and a camera Nikon D500, it represent the depth of the ocean and the internet."
+                        width="2848" height="2848">
+                    <a href="science.html">
+                        <p>Mặt Khoa học, vật lý và kĩ thuật</p>
+                    </a>
+                </figure>
+                <figure class="container">
+                    <img src="Images/piggy-bank.jpg" alt="Piggy bank" width="4000" height="4000">
+                    <a href="economy.html">
+                        <p>Kinh tế, tài chính</p>
+                    </a>
+                </figure>
+
+                <figure class="container">
+                    <img src="Images/healthcare.jpg" alt="healthcare" width="3712" height="3712">
+                    <a href="healthcare.html">
+                        <p>Y Sinh</p>
+                    </a>
+                </figure>
+                <figure class="container">
+                    <img src="Images/others.jpg" alt="Purple Pipette" width="3308" height="3308">
+                    <a href="others.html">
+                        <p>Một số lĩnh vực khác</p>
+                    </a>
+                </figure>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Trang web bản Tiếng Việt được phát triển hoàn toàn thủ công. Đây là lần đầu tiên Như tập tành viết code, </p>
+        <p>Mọi
+            sự thiếu sót xin lượng thứ~</p>
+    </footer>

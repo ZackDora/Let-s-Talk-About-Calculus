@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* || RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* || GENERAL STYLES */
+
+.nowrap {
+    white-space: nowrap;
+}
+
+body {
+    font-family: 'Montserrat';
+    font-size: 1.5rem;
+    min-height: 100vh;
+}
+
+main {
+    margin: 3rem;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+footer p {
+    margin: 0rem;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+figcaption {
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 0.5rem;
+}
+
+/* || NAV */
+
+.nav-toggle-label,
+.nav-toggle {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+}
+
+.nav-item {
+    padding: 1rem;
+}
+
+.logo {
+    padding: 1rem;
+}
+
+a,
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: rgb(83, 76, 76)
+}
+
+nav a,
+nav a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+    color: hsla(0, 15%, 66%, 0.6);
+}
+
+h2,
+h3,
+h4 {
+    margin: 1rem 2rem;
+    line-height: 1.5;
+}
+
+p {
+    margin: 2rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.equation {
+    text-align: center;
+    font-weight: bold;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+h1 {
+    font-size: 3.5rem;
+    text-align: left;
+    line-height: 1.5;
+    margin: 2rem 2rem;
+}
+
+ol {
+    margin: 2rem;
+    list-style-position: inside;
+    font-style: italic;
+}
+
+ul {
+    margin: 2rem;
+    list-style-position: inside;
+}
+
+.menu {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.menu>* {
+    flex: 1 1 160px;
+
+}
+
+.menu p {
+    margin: 0rem;
+    line-height: 1.5;
+    text-align: center;
+    font-weight: bold;
+}
+
+.vda-sidepicture {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+.vda-sidepicture>* {
+    flex: 1;
+}
+
+.vda-text-column {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-width: 80%;
+    height: auto;
+    margin: 1rem;
+}
+
+.formular {
+    display: block;
+    width: 40%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.rounded-rectangle {
+    display: flex;
+    margin: 1rem 2rem;
+    flex-direction: column;
+    background-color: black;
+    border-radius: 1rem;
+    max-width: 11rem;
+    min-width: 5rem;
+    height: 2vh;
+}
+
+
+@media all and (max-width: 800px) {
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-left: 2rem;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-item {
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .nav-toggle-label {
+        display: flex;
+        position: absolute;
+        top: 1.5rem;
+        left: 0;
+        height: 100%;
+        margin-left: 1rem;
+    }
+
+    .nav-toggle:checked~.nav-list {
+        display: block;
+    }
+
+    .nav-toggle-label span,
+    .nav-toggle-label span::before,
+    .nav-toggle-label span::after {
+        display: block;
+        background: white;
+        height: 0.25vh;
+        width: 3vh;
+        border-radius: 2px;
+        position: relative;
+    }
+
+    .nav-toggle-label span::before,
+    .nav-toggle-label span::after {
+        content: '';
+        position: absolute;
+    }
+
+    .nav-toggle-label span::before {
+        bottom: 7px;
+    }
+
+    .nav-toggle-label span::after {
+        top: 7px;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    main {
+        margin: 1rem;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    body {
+        font-size: 1rem;
+    }
+
+    .vda-sidepicture,
+    figure {
+        flex-direction: column;
+    }
+
+    img {
+        max-width: 70%;
+        height: auto;
+    }
+
+
+
+    .vda-text-column {
+        text-align: center;
+    }
+
+    .rounded-rectangle {
+        align-self: center;
+    }
+
+    .menu {
+        gap: 0.5rem;
+    }
+
+    .menu p {
+        font-size: 1rem;
+    }
+
+    .menu img {
+        max-width: 100%;
+        height: auto;
+    }
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Nguyen Minh Nhu">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Y sinh</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">LET'S TALK ABOUT CALCULUS!!!</a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html">TRANG CHỦ</a></li>
+                <li class="nav-item"><a href="#content">NỘI DUNG</a></li>
+                <li class="nav-item"><a href="about.html">VỀ CHÚNG TÔI</a></li>
+            </ul>
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span> </label>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Y SINH</h1>
+        <p>
+            Một số ứng dụng của toán cao cấp trong lĩnh vực này:
+        </p>
+        <ul>
+            <p>
+                <li>
+                    Tính lưu lượng máu
+                </li>
+            </p>
+            <p>
+                <li>
+                    Hiệu suất của tim
+                </li>
+            </p>
+        </ul>
+        <h2>Một Số Ví Dụ</h2>
+        <h3>Lưu lượng máu</h3>
+        <p>Quy luật của dòng chảy phân lớp:</p>
+        <img class="formular" style="width: 20%" src="Images/formula17.png" alt="a formula" width="676" height="253">
+        <p> Công thức này cho vận tốc v của dòng máu chảy theo mạch máu có bán kình là R và chiều dài l tại khoảng cách
+            r từ mục trung tâm, trong đó P là chênh lệch áp suất giữa các đầu của mạch máu và η là độ nhớt của máu. Bây
+            giờ, để tính tốc độ của dòng máu ( dung lượng trên đơn vị thời gian), ta xét các bán kính nhỏ hơn cách đều
+            nhau r_1,r_2,... diện tích xấp xỉ của vành mạch máu có bán kính trong r_(i-1) và bán kính ngoài r_i là:
+        </p>
+        <img class="formular" style="width: 30%" src="Images/formula17.1.png" alt="a formula" width="1069" height="146">
+
+        <img class="center" style="width: 30%" src="Images/healthcare1.png" alt="healthcare" width="244" height="200">
+
+
+        <p> Trong hình 4, nếu ∆r nhỏ thì vận tốc gần như không đổi khắp vành mạch và có thể được tính xấp xỉ v(r_i). Do
+            đó dung lượng máu trên đơn vị thời gian chảy qua vành mạch xấp xỉ:
+        </p>
+
+        <img class="formular" style="width: 30%" src="Images/formula18.png" alt="a formula" width="880" height="162">
+        <p>Và tổng dung lượng máu chảy qua mặt cắt trên một đơn vị thời gian là khoảng:</p>
+        <img class="formular" style="width: 20%" src="Images/formula19.png" alt="a formula" width="517" height="287">
+        <img class="center" style="width: 30%" src="Images/healthcare2.png" alt="healthcare" width="273" height="235">
+        <p> Phép xấp xỉ được minh họa trong hình 5, cần lưu ý rằng vận tốc (dung lượng trên đơn vị thời gian) càng gần
+            trung tâm mạch máu càng tăng. Giá trị xấp xỉ chính xác hơn khi η tăng. Khi ta lấy giới hạn , ta được giá trị
+            chính xác của dòng máu (hoặc lưu lượng), dung lượng máu đi qua mặt cắt trên một đơn vị thời gian:</p>
+        <img class="formular" style="width: 50%" src="Images/formula20.png" alt="a formula" width="857" height="460">
+        <p>Phương trình nhận được sẽ là:</p>
+        <img class="formular" style="width: 20%" src="Images/formula21.png" alt="a formula" width="472" height="303">
+        <p>Và phương trình này được gọi là Định Luật Poseuille, nó cho thấy rằng lưu lượng máu tỉ lệ với lũy thừa bậc 4
+            của bán kính của mạch máu.</p>
+        <h3>Hiệu suất của tim</h3>
+        <img class="center" style="width: 30%" src="Images/healthcare3.png" alt="healthcare" width="262" height="241">
+        <p>Hình 6 cho ta thấy hệ tim mạch của còn người. Máu sẽ từ cơ thể quay trở lại thông qua tĩnh mạch, đi vào tâm
+            nhĩ phải của tim và được bơi vào phổi thông qua thân động mạch phổi để bão hòa oxy, sau đó nó sẽ chảy trở
+            lại vào tâm nhĩ trái thông qua các tĩnh mạch phổi và sau đó chảy ra ngoài đến phần còn lai của cơ thể thông
+            qua động mạch chủ. Hiệu suất của tim là lưu lượng máu được bơm bởi tim trên một đơn vị thời gian. Nghĩa là,
+            lưu lượng máu chảy vào động mạch chủ.</p>
+        <p>Phương pháp pha loãng chất chỉ thị màu được sử dụng để đo hiệu suất tim. Chất chỉ thị màu được bơm vào tâm
+            nhĩ phải và chảy qua tim vào động mạch chủ. Một đầu dò được đưa vào động mạch chủ do nồng độ của chất chỉ
+            thị màu còn lại ở tim tại các thời điểm cách đều nhau trong một khoảng thời gian [0,T] cho đến khi chất chỉ
+            thị màu tan sạch. Cho c(t) là nồng độ của chất chỉ thị màu theo thời gian t. Nếu chúng ta chia [0,T] thành
+            các khoảng con có độ dài bằng nhau ∆t, thì lượng chất chỉ thị màu chảy qua điểm đo suốt khoảng con từ
+            t=t_(i-1) đến t=t_i xấp xỉ :</p>
+        <img class="formular" style="width: 40%" src="Images/formula21.1.png" alt="a formula" width="829" height="125">
+        <p>Trong đó: F là tốc độ của dòng máu mà chúng ta đang cố gắng xác định. Do đó tổng lượng chất chỉ thị màu xấp
+            xỉ:</p>
+        <img class="formular" style="width: 30%" src="Images/formula22.png" alt="a formula" width="741" height="271">
+        <p>Và cho n→ ∞, ta nhận thấy rằng năng lượng chất chỉ thị màu là:</p>
+        <img class="formular" style="width: 30%" src="Images/formula23.png" alt="a formula" width="481" height="223">
+        <p>Do đó hiệu suất tim được cho bởi công thức:</p>
+        <img class="formular" style="width: 20%" src="Images/formula24.png" alt="a formula" width="390" height="225">
+        <p>Trong đó: đã biết lượng chất chỉ thị màu A và có thể tính xấp xỉ tích phân khi đọc số đo nồng độ.</p>
+
+        <section id="content">
+            <h2>ỨNG DỤNG CỦA GIẢI TÍCH</h2>
+            <div class="menu">
+                <figure class="container">
+                    <img src="Images/Science.jpg"
+                        alt="This photo was taken in a school bench, with a mesh for fruit, a blue lantern and a camera Nikon D500, it represent the depth of the ocean and the internet."
+                        width="2848" height="2848">
+                    <a href="science.html">
+                        <p>Mặt Khoa học, vật lý và kĩ thuật</p>
+                    </a>
+                </figure>
+                <figure class="container">
+                    <img src="Images/piggy-bank.jpg" alt="Piggy bank" width="4000" height="4000">
+                    <a href="economy.html">
+                        <p>Kinh tế, tài chính</p>
+                    </a>
+                </figure>
+
+                <figure class="container">
+                    <img src="Images/healthcare.jpg" alt="healthcare" width="3712" height="3712">
+                    <a href="healthcare.html">
+                        <p>Y Sinh</p>
+                    </a>
+                </figure>
+                <figure class="container">
+                    <img src="Images/others.jpg" alt="Purple Pipette" width="3308" height="3308">
+                    <a href="others.html">
+                        <p>Một số lĩnh vực khác</p>
+                    </a>
+                </figure>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Trang web bản Tiếng Việt được phát triển hoàn toàn thủ công. Đây là lần đầu tiên Như tập tành viết code, </p>
+        <p>Mọi
+            sự thiếu sót xin lượng thứ~</p>
+    </footer>
